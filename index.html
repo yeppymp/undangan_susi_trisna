@@ -430,8 +430,12 @@
 		const page = document.getElementById("page")
 
 		function OpenInvitation() {
-			splashscreen.style.display = "none"
-			page.style.display = "block"
+			splashscreen.style.display = "none";
+			page.style.display = "block";
+
+			setTimeout(() => {
+				$("#audio").get(0).play();
+			}, 500);
 		}
 	</script>
 
